@@ -1,10 +1,7 @@
-function Home(proos){
-    let user =props.user;
-    console.log(user);
+function Home(){
     return (
         <>
-        <h1> hi {user.username}welcome to the home
-        </h1>
+        <h1> welcome! Home</h1>
         </>
     )
 }

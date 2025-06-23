@@ -145,10 +145,43 @@ function App() {
 
 export default App;
 */
-import ListUser from "./ListUser.jsx";
+/*import ListUser from "./ListUser.jsx";
 function App(){
   return (
     <ListUser/>
   )
 }
 export default App
+*/
+/*import placement from "./pages/placements.jsx";
+function App(){
+  return (
+    <>
+    <Routes>
+      <Route path="/" element ={<Home />} />
+      <Route path="/about" element ={<About/>} />
+      <Route path="/placement" element ={<Placement />} />
+    </Routes>
+    </>
+  );
+}
+  */
+ import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Home from "./home.jsx";
+import About from "./pages/About.jsx";
+
+
+function App(){
+  return (
+    <>
+    <Routes>
+      <Route path="/" element ={<Home />}/>
+      <Route path="/about" element={<About />}/>
+    
+    </Routes>
+    
+    </>
+  );
+}
+export default App;
